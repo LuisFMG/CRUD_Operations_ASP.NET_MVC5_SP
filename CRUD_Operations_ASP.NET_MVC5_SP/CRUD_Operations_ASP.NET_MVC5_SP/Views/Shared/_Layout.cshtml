@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - Operaciones CRUD</title>
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Operaciones CRUD En ASP.NET MVC5", "SearchEmployee", "Employee", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+
+            @RenderBody() <hr />
+
+        </div>
+        <div class="container body-content">
+            <footer>
+                <p>
+                    &copy; @DateTime.Now.Year - Operaciones CRUD En ASP.NET MVC5 <br /><br />
+                    Desarrollador - Luis F. Molina G. <br />
+                    Entorno De Desarrollo - Visual Studio 2015 Community <br />
+                    Lenguajes Principales - C#, HTML5 <br />
+                    Motor De Vistas - Razor <br />
+                    Motor De Base De Datos - SQL Server 2014 Express Edition <br />
+                    Método De Negociación A BD - Procedimientos Almacenados <br />   
+                    Framework's De Diseño - Bootstrap v3.0.0, Jquery 1.10.2                
+                </p>
+            </footer>
+        </div>
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+    </body>
+</html>
